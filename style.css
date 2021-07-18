@@ -1,0 +1,581 @@
+/*HEADER*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@400;500;700;900&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 5px 5px;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 15px;
+
+  
+}
+
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+
+}
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    
+}
+h3{
+
+    color: rgb(197, 15, 15);
+    font-weight: bold;
+
+
+}
+
+
+h2{
+
+    color: rgb(197, 15, 15);
+
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.header{
+    background-image: url(/foto/cappicinp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.header-navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+       
+}
+
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-bottom: 5px solid rgb(197, 15, 15);
+    padding-bottom: 5px;
+    border-radius: 35px;
+    transition:  .50s;
+
+}
+.header-logo:hover {
+    top: 0;
+}
+
+
+.header-logo:hover h2{
+    transform: scale(1.1);
+
+}
+
+ul{
+    display: flex;
+ }
+ 
+ li{
+     margin-left: 27px;
+     
+
+ }
+ li:first-child{
+     margin-right: 30px;
+ }
+
+.header-text{
+    position:absolute;
+    top: 30%;
+    left: 43%;
+    display: flex;
+    align-items: center;        /* dikeyde hizaliyor */
+    justify-content: center;    /* yatayda hizaliyor  */
+    flex-direction: column;    /* alt alta olsun diye   */
+    transform: translateX(-30%);  /*ortaya hizalamak icin kullaniyoruz */
+ 
+   
+}
+
+
+h1{
+    font-size: 8.5rem;
+    font-weight: 100;
+    line-height: 0.4;    /*satir boslugu icin kullaniyoruz*/
+    letter-spacing: 2px; /*harfler arasi bosluk icin kullaniyoruz*/
+    font-family: 'Herr Von Muellerhoff', cursive;
+    margin-bottom: 10px;
+}
+.first-letter{
+    font-size: 10.3rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: rgb(197, 15, 15);
+
+}
+h4{
+    font-size: 22px;
+}
+
+.btn-coffee{
+    display: block;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    padding: 5px 10px; /*ic bosluk altdan usten ve kenarlardan*/
+    position: relative;
+    overflow: hidden; /*tasmayi engellemek icin */
+
+}
+.btn-coffee::after{
+    content: "BUY";
+    position:absolute; /*buna absolute verdiysek gidip ana kapsayicimiza relative  vermemiz lazim yani .btn-coffee ye */
+    top: 100%;
+    left: 0%;
+    background-color: rgb(197, 15, 15);
+    width: 100%;
+    height: 100%;
+    display: flex;   /*yaziyi ortaladik*/
+    align-items: center;
+    justify-content: center;
+    transition:  .5s;
+    border-top-left-radius: 35px; /* sagdan ve soldan kesme yumusaltma yapmak icin */
+    border-bottom-right-radius: 35px; /* asagidan ve yukaridan kesme yumusaltma yapmak icin */
+}
+.btn-coffee:hover::after{
+    top: 0;
+}
+
+/*ABOUT*/
+
+.about{
+    margin-bottom: 150px;
+}
+.about-title{
+    margin: 60px 0;
+
+}
+.about-title h2{
+    width: 100%;
+    text-align:center ;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.about-title h2::after{
+    content: "";
+    height: 5px;
+    width: 30px;
+    background-color:#5b2a02 ;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+.about-img{
+    width: 45%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*en  boy oranini koruyarak fotografi yerlestiriyor*/
+
+}
+.about-text{
+    width: 40%;
+}
+
+.about-text h4{
+    margin-bottom: 1px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(197, 15, 15);
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align:center;
+    color: #2c2727;
+
+
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    display: flex ;  /*yan yana yapiyor foto vs */
+    flex-wrap: wrap; /*tasmalari asagiya getirecek iki satir gibi yapacak fotolari */
+
+}
+.portfolio-item{
+    width:25%;
+    height: 200;
+    overflow: hidden; /*tasmalari bununla engelliyoruz*/
+    position: relative;
+
+}
+
+.portfolio-item img{
+    width: 100%;            /*fotolari duzenlemk icin */
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(197, 15, 15) ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: white;
+    font-size: 50px;
+    display: flex;   /*yaziyi ortaladik*/
+    align-items: center;
+    justify-content: center;
+    transition:  .5s;
+
+}
+.portfolio-item:hover .overlay{
+    top: 0;
+
+}
+
+.portfolio-item:hover img{
+    transform: scale(1.1);
+
+}
+
+
+/*DİSCOVER*/
+
+.discover{
+    margin-bottom: 150px;
+}
+.discover-title{
+    margin: 60px 0;
+
+}
+.discover-title h2{
+    width: 100%;
+    text-align:center ;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.discover-title h2::after{
+    content: "";
+    height: 5px;
+    width: 30px;
+    background-color:#5b2a02 ;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6px;
+}
+
+.discover-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+.discover-img{
+    width: 45%;
+}
+.discover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*en  boy oranini koruyarak fotografi yerlestiriyor*/
+
+}
+.discover-text{
+    width: 40%;
+}
+
+.discover-text h4{
+    margin-bottom: 1px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(197, 15, 15);
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 200;
+
+}
+
+.discover-text p{
+    font-size: 15px;
+    text-align:center;
+    color: #2c2727;
+
+
+}
+
+/*CONTACT*/
+.contact{
+    margin-bottom: 150px;
+    padding: 10px;
+    
+    
+}
+
+.contact-title{
+    margin: 60px 0;
+
+}
+
+.contact h2{
+    width: 100%;
+    text-align:center ;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+    
+
+}
+
+.contact h2::after{
+    content: "";
+    height: 5px;
+    width: 30px;
+    background-color:#5b2a02 ;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6px;
+    
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center; 
+    
+   
+ }  
+.contact-text {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 1px;
+    flex-direction: column;
+    
+    
+}
+
+.contact-text h4{
+    margin-bottom: 10px;
+  
+} 
+
+.contact-text p{
+    font-size: 14px;
+    
+}
+
+/*FOOTER*/
+.footer h2{
+    width: 100%;
+    text-align:center ;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 60px 0;
+    
+
+}
+
+.footer h2::after{
+    content: "";
+    height: 5px;
+    width: 20px;
+    background-color:#5b2a02 ;
+    margin: 0 auto;
+    display: block;
+    margin-top: 6px;
+}
+
+.footer{
+    background-color: black;
+}
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 12px;
+    margin-bottom: 40px;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column; /* yukarıdan aşağı doğru sıralar.*/
+    
+}
+.footer-social i{
+    color: white;
+    margin-bottom: 50px; /*asagidan mesafe  birakmak icin kullaniliyor*/
+    font-size: 20px;
+    padding:0 45px; /*aralara mesafe koyuyor*/
+    
+  
+}
+
+.footer-social:first-child{
+    margin-left: 70px;
+
+
+}
+
+/* MENU */
+#menu-icon{
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+    display: none;
+
+}
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position:absolute;
+        top: 100px;
+        left: 0;
+        background-color: #420505;
+        width: 100%;   
+        overflow: hidden;
+        transition: max-height .7s;
+    
+    }
+
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    .header-menu ul li a{
+        
+        color: #fff;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* ABOUT */
+@media only screen and (max-width:800px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .about-text{
+        width: 100%;
+
+    }
+}
+
+/* PORTFOLIO */
+
+@media only screen and (max-width:800px){
+    .portfolio-item{
+        flex-basis: 50%;
+        width: 100%;
+
+    }   
+}
+
+@media only screen and (max-width:800px){
+    .portfolio-item{
+        flex-basis: 100%;
+    }
+   
+}
+
+/* DISCOVER  */
+@media only screen and (max-width:800px){
+    .discover-img{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .discover-text{
+        width: 100%;
+
+    }
+}
+/* CONTENT  */
+@media only screen and (max-width:805px){
+    .contact-content{
+        flex-direction: column;
+        
+    }    
+    .contact-text  {
+        margin-top: 30px;
+        
+    }
+    .contact-text p{
+        	width: 100%;
+            text-align: center;
+    }
+
+}
